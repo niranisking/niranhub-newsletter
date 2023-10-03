@@ -1,10 +1,14 @@
 const express = require('express')
 
+// import express from 'express'
+
 const bodyParser = require('body-parser')
 
 const request = require("request")
 
 const https = require('node:https')
+
+const PORT = 5700
 
 
 
@@ -84,6 +88,6 @@ app.get("/", function(req, res){
 })
 
 
-app.listen(proc.env.PORT || 5700, function(){
+app.listen(PORT, function(){
     console.log("app started on port 5700...")
 })
